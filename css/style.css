@@ -48,7 +48,7 @@ body{
 }
 
 .nav-item, .active{
-    flex: 1 0 50%;
+    flex: 1 50%;
     text-align: center;
     vertical-align: middle;
     margin: auto;
@@ -68,11 +68,11 @@ a{
 }
 
 .active{
-    text-decoration: dotted;
     background-color: rgb(255, 255, 255, 0.9);
     border-radius: 10px;
     vertical-align: middle;
 }
+
 
 h1.logo{
     display:flex;
