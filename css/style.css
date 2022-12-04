@@ -16,9 +16,10 @@ html {
     overflow:hidden;
     margin-bottom: 0.5rem;
     background-color: #FFD6DE;
-    height: 110px;
+    height: auto;
     text-transform: uppercase;
     font-weight: 700;
+    
     
 }
 
@@ -40,7 +41,8 @@ img {
     flex: 1 0 50%;
     text-align: center;
     vertical-align: middle;
-    margin: 10px
+    margin: auto;
+    width: auto;
 }
 
 a{
@@ -61,6 +63,7 @@ a{
     background-color:white;
     border-radius: 10px;
     text-decoration: dotted;
+    vertical-align: middle;
 }
 
 h1.logo{
