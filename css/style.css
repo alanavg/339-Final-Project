@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+html {
+    font-family: 'Montserrat';
+    
+}
+
+
+.header-nav{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    line-height: 1rem;
+    overflow:hidden;
+    margin-bottom: 0.5rem;
+    background-color: #FFD6DE;
+    height: 110px;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+}
+
+.nav-menu{
+    list-style:none;
+    display:flex;
+    justify-content:space-around;
+    align-self: center;
+    margin:0;
+}
+
+
+img {
+    margin-left: 70px;
+    width: 75px;
+}
+
+.nav-item, .active{
+    flex: 1 0 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 10px
+}
+
+a{
+    text-decoration: none;
+    font-size: medium;
+    color: black;
+    
+}
+
+.nav-item:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    height: auto;
+}
+
+.active{
+    text-decoration: dotted;
+    background-color:white;
+    border-radius: 10px;
+    text-decoration: dotted;
+}
+
+h1.logo{
+    display:flex;
+    align-self: flex-start;
+    text-decoration: none;
+    letter-spacing: 0.2rem;
+    /* padding: 0.8rem; */
+    font-size: 20px;
+    font-weight:600;
+    align-items:center;
+    white-space: nowrap;
+}
+
+.nav-item:nth-child(3){
+    width: 30px;
+}
+
+.nav-item:nth-child(2){
+    width: 150px;
+}
+
+
+
+
