@@ -353,6 +353,9 @@ button:focus{
     line-height: 1.7;
   }
 
+  #skin-description{
+    text-align: start;
+  }
  
 /*IPAD SCREEN */
 @media screen and (min-width: 600px){
