@@ -49,6 +49,7 @@ body{
     display:flex;
     justify-content:space-around;
     align-self: center;
+    justify-content: center;
     margin:0;
 }
 
@@ -58,7 +59,7 @@ body{
 }
 
 .nav-item, .active, .active1{
-    flex: 1 0 40%;
+    flex: 1 0 50%;
     text-align: center;
     vertical-align: middle;
     margin: auto;
@@ -87,6 +88,9 @@ a{
     border: 2px black dotted;
 }
 
+ul.nav-menu:nth-child(2){
+    width:auto;
+}
 
 
 h1.logo{
@@ -95,10 +99,10 @@ h1.logo{
     text-decoration: none;
     letter-spacing: 0.2rem;
     /* padding: 0.8rem; */
-    /* font-size: 20px; */
+    font-size:19px;
     font-weight:600;
     align-items:center;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 
 .nav-item:nth-child(3){
@@ -121,7 +125,7 @@ h1.logo{
 }
 
 .welcome h1, .me-content h1, .my-skincare h1, .skintypes h1, #type, .brands h1{
-    font-size: 18px;
+    font-size: 17px;
     text-transform: uppercase;
     text-decoration: underline;
     text-align: center;
@@ -408,9 +412,6 @@ button:focus{
         height: 70px;
     }
 
-    .nav-item, .active, .active1{
-        flex: 1 0 70%;
-    }
 
 
     .me-content h1, .my-skincare h1, .skintypes h1, #type, .brands h1, .welcome{
