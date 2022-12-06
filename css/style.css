@@ -95,7 +95,7 @@ h1.logo{
     text-decoration: none;
     letter-spacing: 0.2rem;
     /* padding: 0.8rem; */
-    font-size: 24px;
+    font-size: 20px;
     font-weight:600;
     align-items:center;
     white-space: nowrap;
@@ -121,7 +121,7 @@ h1.logo{
 }
 
 .welcome h1, .me-content h1, .my-skincare h1, .skintypes h1, #type, .brands h1{
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
     text-decoration: underline;
     text-align: center;
