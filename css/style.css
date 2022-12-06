@@ -202,6 +202,7 @@ button{
    border-radius: 10px;
    font-family: 'Montserrat';
    border:black 1px solid;
+   color: black;
 }
 
 button:hover{
@@ -253,7 +254,12 @@ button:focus{
 
   .container:hover .overlay {
     opacity: 0.85;
-    border: 5px black solid ;
+    border: 5px black solid;
+  }
+
+  .container:focus .overlay {
+    opacity: 0.85;
+    border: 5px black solid;
   }
 
   .text {
@@ -279,6 +285,9 @@ button:focus{
     
   }
   
+  .my-skincare img:hover{
+    border: 5px black solid ;
+  }
 
   #normal{
     background-color: #f4cccc;
@@ -400,7 +409,8 @@ button:focus{
     }
 
     button{
-        width:150px;
+        width:250px;
+        height:40px;
     }
 
     .me-content img{
