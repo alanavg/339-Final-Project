@@ -129,7 +129,6 @@ h1.logo{
 
 .welcome p, .me-content p, .my-skincare p, .skintypes p, #skin-description{
     padding-top: 15px;
-    width: 90%;
     font-weight: lighter;
     line-height: 1.7;
     text-align: center;
@@ -140,7 +139,6 @@ h1.logo{
 }
 
 .me-content, .my-skincare{
-    /* border: 10px #FFE4CA solid; */
     border-top-width: 15px;
 }
 
@@ -155,8 +153,6 @@ h1.logo{
 .favs-gallery{
     display:grid;
     grid-template-columns: 1 1fr;
-    /* display: block; */
-    /* grid-template-columns: 300px 1fr; */
     gap: 20px;
     align-items: center;
     max-width: 800px;
@@ -417,6 +413,9 @@ button:focus{
     }
 
 
+    .me-content h1, .my-skincare h1, .skintypes h1, #type, .brands h1, .welcome{
+        margin-top: 30px;
+    }
 
     .row{
         flex-direction: row;
