@@ -1,7 +1,7 @@
 
 document.querySelector("#normal").addEventListener("click", function() {
     document.querySelector(".row").style.border = "8px #f4cccc solid";
-    document.querySelector("#normal").style.border = "8px black solid";
+    document.querySelector("#normal").style.border = "4px black solid";
 });
 
 document.querySelector("#oily").addEventListener("click", function() {
