@@ -24,6 +24,11 @@ document.querySelector("#sensitive").addEventListener("click", function() {
     document.querySelector("#normal").style.border = "1px black solid";
 });
 
+document.querySelector("#normal").addEventListener("mouseover", function() {
+    document.querySelector("#normal").style.border = "4px black dotted";
+});
+
+
 
 
 

@@ -265,7 +265,7 @@ button{
 
 
 button:hover{
-    border:black 3px dotted;
+    border:black 4px dotted;
     height:40px;
 
 }
@@ -327,7 +327,6 @@ button:focus{
     font-size: 20px;
     position: absolute;
     top: 50%;
-    /* left: 30%; */
     text-align: center;
   }
 
@@ -351,7 +350,6 @@ button:focus{
 
   #normal{
     background-color: #f4cccc;
-    border:black 4px solid;
     transition: background-color 0.5s ease;
     transition: width 0.5s ease;
   }
@@ -359,7 +357,7 @@ button:focus{
   #normal:hover{
     background-color: #f9adad;
     width: 60%;
-    border:black 3px dotted;
+    border:black 4px dotted;
   }
 
   #oily, #dry, #combo, #sensitive{
@@ -419,6 +417,7 @@ button:focus{
   .brand-gallery img{
     border-top: 2px solid black;
     border-bottom: 2px solid blacK;
+    width:100%;
   }
   .brand-gallery p{
     align-items: center;
@@ -431,8 +430,8 @@ button:focus{
 }
 
 
-  .brand-gallery img{
-    width:100%;
+  .brand-gallery img:focus, .brand-gallery p:focus{
+    border:9px black dotted;
   }
 
 
@@ -454,7 +453,7 @@ button:focus{
 
 
 /*IPAD SCREEN */
-@media screen and (min-width: 600px){
+@media screen and (min-width: 768px){
 
     .h1, .logo{
         flex-direction: row-reverse;
@@ -481,9 +480,7 @@ button:focus{
         width:100px;
     }
 
-    .column{
-        flex-basis: 33.3333%;
-    }
+    
 
     .brand-gallery{
         grid-template-columns: repeat(2, 1fr);
@@ -578,13 +575,11 @@ button:focus{
 }
 
 /* DESKTOP */
-@media screen and (min-width: 950px){
+@media screen and (min-width: 1024px){
     
     header.header-nav{
         height: 70px;
     }
-
-
 
     .me-content h1, .my-skincare h1, .skintypes h1, #type, .brands h1, .welcome{
         margin-top: 30px;
@@ -595,7 +590,6 @@ button:focus{
     }
 
     .favs-gallery{
-        display:grid;
         grid-template-columns: 300px 1fr;
         gap: 20px;
         align-self: center;
@@ -622,8 +616,6 @@ button:focus{
     }
 
     .brand-gallery{
-        /* display:grid;
-        row-gap: 50px; */
         display: grid;
         grid-template-columns: repeat(4, 1fr);
       }
@@ -636,9 +628,6 @@ button:focus{
         font-size: larger;
     }
 
-    .brand-gallery{
-        grid-template-columns: repeat(2);
-    }
 
     #pic2, #pic1{
         height:250px
