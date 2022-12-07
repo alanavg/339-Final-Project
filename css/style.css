@@ -2,6 +2,7 @@
 
 html {
     font-family: 'Montserrat';
+    cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1034.ani), url(https://cur.cursors-4u.net/nature/nat-11/nat1034.gif), auto;
 }
 
 header {
@@ -79,6 +80,12 @@ a{
     border:2px black solid;
     border-radius: 10px;
     /* height: auto; */
+}
+
+.nav-item:focus{
+    background-color: rgba(255, 255, 255, 0.822);
+    border:2px black solid;
+    border-radius: 20px;
 }
 
 .active, .active1{
@@ -173,6 +180,11 @@ h1.logo{
     border: 5px rgba(254, 200, 200, 0.9) solid;
 }
 
+.favs-gallery img:focus{
+    border: 5px rgba(254, 200, 200, 0.9) solid;
+}
+
+
 .favs-gallery p{
 position: relative;
 padding: 1rem;
@@ -180,6 +192,48 @@ background: rgba(white, 0.8);
 font-weight: lighter;
 background-color:rgba(254, 200, 200, 0.5);
 }
+
+#pic1{
+    order:16
+}
+
+#pic1-txt{
+    order:17;
+}
+
+#pic2{
+    order:14;
+}
+
+#pic2-txt{
+    order:15;
+}
+
+#pic8{
+    order: 12;
+}
+
+#pic8-txt{
+    order:13;
+}
+
+#pic4{
+    order:10;
+}
+
+#pic4-txt{
+    order:11;
+}
+
+#pic6-txt{
+    order:9;
+}
+
+#pic6{
+    order:8;
+}
+
+
 
 footer p{
     font-size: medium;
@@ -209,15 +263,17 @@ button{
    color: black;
 }
 
+
 button:hover{
     border:black 3px dotted;
-    background-color: antiquewhite;
-    height:35px;
+    height:40px;
+
 }
 
 button:focus{
     border:black 4px solid;
 }
+
 
 .row{
     display:flex;
@@ -296,18 +352,51 @@ button:focus{
   #normal{
     background-color: #f4cccc;
     border:black 4px solid;
+    transition: background-color 0.5s ease;
+    transition: width 0.5s ease;
+  }
+
+  #normal:hover{
+    background-color: #f9adad;
+    width: 60%;
+    border:black 3px dotted;
+  }
+
+  #oily, #dry, #combo, #sensitive{
+    transition: background-color 0.5s ease;
+    transition: width 0.5s ease;
+  }
+
+  #oily:hover, #dry:hover, #combo:hover, #sensitive:hover{
+    width: 60%;
   }
 
   #oily{
     background-color:#d9d2e9;
   }
 
+  #oily:hover{
+    background-color:#b7acd0;
+  }
+
   #dry{
     background-color: #cfe2f3;
   }
 
+  #dry:hover{
+    background-color: #9ac8ef;
+  }
+
   #combo{
     background-color: #d9ead3;
+  }
+
+  #combo:hover{
+    background-color: #b4daa6;
+  }
+
+  #sensitive:hover{
+    background-color: #fcc897;
   }
 
   .brands p, .brands h1, .my-skincare h1{
@@ -332,9 +421,14 @@ button:focus{
     border-bottom: 2px solid blacK;
   }
   .brand-gallery p{
-    background-color: #FFE4CA;
     align-items: center;
+    background-color: #d0e9c6;
   }
+
+
+  .brand-gallery p:nth-child(2),.brand-gallery p:nth-child(6),.brand-gallery p:nth-child(10), .brand-gallery p:nth-child(14), .brand-gallery p:nth-child(18){
+    background-color:#e8f4c9;
+}
 
 
   .brand-gallery img{
@@ -357,6 +451,8 @@ button:focus{
     text-align: start;
   }
  
+
+
 /*IPAD SCREEN */
 @media screen and (min-width: 600px){
 
@@ -396,12 +492,88 @@ button:focus{
 
     .brand-gallery p{
         border-top: 2px solid black;
-        border-bottom: 2px solid blacK;
+        border-bottom: 2px solid black;
+        background-color: #d0e9c6;
       }
 
     .brand-gallery p:nth-child(2),.brand-gallery p:nth-child(6),.brand-gallery p:nth-child(10), .brand-gallery p:nth-child(14), .brand-gallery p:nth-child(18){
         background-color:#cfe2f3;
     }
+
+        
+    #pic1{
+        order:1;
+    }
+
+    #pic1-txt{
+        order:2;
+    }
+
+    #pic2-txt{
+        order:3;
+    }
+
+    #pic2{
+        order:4;
+    }
+
+    #pic3-txt{
+        order:6;
+    }
+
+    #pic3{
+        order:5;
+    }
+
+    #pic4-txt{
+        order:7;
+    }
+
+    #pic4{
+        order:8;
+    }
+
+    #pic5{
+        order:9;
+    }
+    
+    #pic5-txt{
+        order:10;
+    }
+
+    #pic6-txt{
+        order:11;
+    }
+
+    #pic6{
+        order:12;
+    }
+
+    #pic7{
+        order:13;
+    }
+
+    #pic7-txt{
+        order:14;
+    }
+
+    #pic8-txt{
+        order:15;
+    }
+
+    #pic8{
+        order:16;
+    }
+
+    #pic9{
+        order:17;
+    }
+
+    #pic9-txt{
+        order:18;
+    }
+
+  
 
 }
 
@@ -479,4 +651,16 @@ button:focus{
     #pic6, #pic8, #pic5, #pic7{
         height:313px;
     }
+}
+
+@media screen and (prefers-reduced-motion) {
+    #normal, #oily, #dry, #combo, #sensitive{
+        transition:none;
+      }
+
+     #oily:hover, #dry:hover, #combo:hover, #sensitive:hover, #normal:hover{
+        width: 30%;
+      }
+    
+      
 }

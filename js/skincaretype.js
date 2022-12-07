@@ -26,6 +26,7 @@ document.querySelector("#sensitive").addEventListener("click", function() {
 
 
 
+
 // normal skin flexbox
 document.querySelector("#normal").addEventListener("click", function() {
 
